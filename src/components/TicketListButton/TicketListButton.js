@@ -1,11 +1,9 @@
-import './App.scss';
+import './TicketListButton.scss';
 
-function App() {
+function TicketListButton() {
   return (
-    <div className="App">
-      fghjk
-    </div>
+    <button className="button">Показать еще <span button__value>5</span> билетов</button>
   );
 }
 
-export default App;
+export default TicketListButton;
