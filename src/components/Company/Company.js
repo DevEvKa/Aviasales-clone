@@ -7,16 +7,16 @@ function Company() {
       <h3 className="company__title">Компания</h3>
       <form className="company__form form"  action="#">
         <div className="company__option option">
-          <input className="option__radio" type="radio" id="all" name="company-group" checked />
-          <label className="option__label" for="all">Все</label>
+          <input className="option__radio" type="radio" id="all" name="company-group" />
+          <label className="option__label" htmlFor="all">Все</label>
         </div>
         <div className="company__option option">
           <input className="option__radio" type="radio" id="s7" name="company-group" />
-          <label className="option__label" for="s7">S7</label>
+          <label className="option__label" htmlFor="s7">S7</label>
         </div>
         <div className="company__option option">
           <input className="option__radio" type="radio" id="xiamenAir" name="company-group" />
-          <label className="option__label" for="xiamenAir">XiamenAir</label>
+          <label className="option__label" htmlFor="xiamenAir">XiamenAir</label>
         </div>
       </form>
     </section>
