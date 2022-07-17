@@ -1,11 +1,19 @@
-import './App.scss';
+import './Header.scss';
 
-function App() {
+//images
+import logoMain from '../../images/logo_main.png';
+
+function Header() {
   return (
-    <div className="App">
-      fghjk
-    </div>
+    <header className="header">
+      <div className="header__logo-container">
+        <a className="header__logo-link">
+          <img className="header__logo-image" src={logoMain} alt="An airplane on the background of a globe"/>
+        </a>
+        
+      </div>
+    </header>
   );
 }
 
-export default App;
+export default Header;
