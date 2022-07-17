@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/aviasales-clone/static/css/main.12fb9ed4.css",
+    "main.js": "/aviasales-clone/static/js/main.4dcd2678.js",
+    "static/media/logo_main.png": "/aviasales-clone/static/media/logo_main.d645d8172916c51ed6fb.png",
+    "index.html": "/aviasales-clone/index.html",
+    "main.12fb9ed4.css.map": "/aviasales-clone/static/css/main.12fb9ed4.css.map",
+    "main.4dcd2678.js.map": "/aviasales-clone/static/js/main.4dcd2678.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12fb9ed4.css",
+    "static/js/main.4dcd2678.js"
+  ]
+}
