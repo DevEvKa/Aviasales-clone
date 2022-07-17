@@ -9,6 +9,8 @@ function TicketCard( props ) {
   //if (!props || props.companies.length <= 1 || props.tickets.length <= 1) {
   //  return <p className="Нет данных"></p>
   //}
+
+  
   let companies = props.companies,
   tickets = props.tickets;
 
@@ -71,6 +73,9 @@ let getCompany = (companyId) => {
     )
 
   )
+
+   
+    
     //<a>ghj</a>
   )
 }

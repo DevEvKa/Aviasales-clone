@@ -8,6 +8,7 @@ import Company from '../Company/Company.js';
 import PreferencesButtons from '../PreferencesButtons/PreferencesButtons.js';
 import TicketCard from '../TicketCard/TickedCard.js';
 import TicketListButton from '../TicketListButton/TicketListButton.js';
+import SearchPanel from '../SearchPanel/SearchPanel.js';
 
 //styles
 import './App.scss';
@@ -42,6 +43,7 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <SearchPanel />
       <div className="app__content content">
         <aside className="content__options options">
           <Transfer />
