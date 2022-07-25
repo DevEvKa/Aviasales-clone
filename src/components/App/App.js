@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import { ThemeProvider } from '@mui/material/styles';
 
 //components
 import Header from '../Header/Header.js';
@@ -12,6 +13,9 @@ import SearchPanel from '../SearchPanel/SearchPanel.js';
 
 //styles
 import './App.scss';
+import theme from '../../styles/Styles';
+
+export let companies;
 
 function App() {
   const [appState, setAppState] = useState({
@@ -33,7 +37,6 @@ function App() {
             companies: respCompsnies.data,
             tickets: respTickets.data,
            })
-
          })
       )
       .catch((error) => console.log(error)) 
@@ -41,21 +44,23 @@ function App() {
 
 
   return (
-    <div className="app">
-      <Header />
-      <SearchPanel />
-      <div className="app__content content">
-        <aside className="content__options options">
-          <Transfer />
-          <Company />
-        </aside>
-        <main className="content__results results">
-          <PreferencesButtons />
-          <TicketCard companies={appState.companies} tickets={appState.tickets}/>
-          <TicketListButton />
-        </main>
+    <ThemeProvider theme={theme}>
+      <div className="app">
+        <Header />
+        <SearchPanel />
+        <div className="app__content content">
+          <aside className="content__options options">
+            <Transfer />
+            <Company />
+          </aside>
+          <main className="content__results results">
+            <PreferencesButtons />
+            <TicketCard companies={appState.companies} tickets={appState.tickets}/>
+            <TicketListButton />
+          </main>
+        </div>
       </div>
-    </div>
+    </ThemeProvider>   
   );
 }
 
