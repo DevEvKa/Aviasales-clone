@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+Здравствуй, Дина! ) 
+Отчет по замечаниям к работе первого этапа:
+отработаны полностью: 
+"можно было решить через toLocaleString" - сделано. смущает только, что везде время 01:50. но я проверила на нескольких конвертерах, вроде бы все верно.
+"здесь в момент когда tickets null возникает ошибка из за которой ломается приложение" - сделано. это действительно было проблемой, которую не удавалось решить самой. спасибо ) подскажи, пожалуйста, не нашла, что означает этот вопросительный знак? необязательный параметр?
+"странный number в спане, как будто это должна была быть переменная, но написано как текст" - поправила. это я нечаянно перезаложилась на будущее. а ведь там и правда просто по 5 можно подгружать, без получения значения от пользователя.
+"все вспомогательные функции, для расчетов, лучше выносить в отдельный файл utils.ts / helpers.ts а константы в constants.ts" - сделано
+"не хватает форматирования цены , можно сделать через Intl.NumberFormat" - сделано. классная штука, не знала о такой.
+можно было бы вместо дива обернуть в label - сделано. я вообще зачем-то решила заморочиться и поиспользовать material ui, которую Алексей К. в чате предложил. поэтому сейчас на странице все четенько по этому замечанию, но нужно добить стили некоторых элементов. не поддались они мне с первого раза. сделаю на втором этапе.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+отработаны частично:
+"для склонения слов есть функция - https://snipp.ru/jquery/word-declination-js посмотри, и используй ее" --- тут я все таки оставила свою монстрскую функцию. потому что кейс с 0 пересадок, решида выдавать как "без пересадок". Это как-то человечнее.
+"README (Рекомендую оформлять его как следует и убирать дефолтныеформулировки CRA/CNA/etc.)" - файл добавлен. пока пусть будет для заметок. (потом все равно планирую этот проект оформить отдельно, сейчас сжатые сроки немного мешают работе над ним)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+не отработаны:
+"...и возможно получится подключить стор" - вот с этим пока вопрос. попробую сделать на втором этапе.

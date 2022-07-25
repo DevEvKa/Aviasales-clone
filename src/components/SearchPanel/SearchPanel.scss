@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.search {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+
+    &-input {
+        background: $color-white;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    &-input:first-child {
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    &-input::placeholder {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        color: $color-placeholder;
+    }
+
+}
+
